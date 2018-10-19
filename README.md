@@ -2,19 +2,23 @@
 
 #Getting Started
 -----------
-Its a simple application in which i get data from api and showing a list and detail screen
+# Its a simple application in which app fetch data from api and display a list of data in tableview
+    - Showing loading-indicator
 
-First screen is Splash
+    -Use WebView in detail screen
 
-First Screen Home screen we get data from NY Times Most Popular Articles API and show a list of articles
+# I have used NYTime API.  API need header  API Key which you get from NYTimes and need two parameters section and timePeriod. Detail Could be seen in MostViewService in HomeviewController-> Services->
 
-when user click of any list item on home screen he will see the detail screen with web link details 
+# I have used Alamofire for network calls and used Network Manager to handle all networks calls in the app. 
 
-Showing loading-indicator
+# Structural I made service class and service class finally gives call to network manager with parameters headers url and urlRequestType.
 
-Use WebView in detail screen
+# I have made our own  Model Mapper which dynamically map Json object with our Model. Mapper is written in Utility Class.
 
-# Built With
+ 
+
+
+# Pods Used
 
 . Alamofire
 
@@ -22,7 +26,6 @@ Use WebView in detail screen
 
 . AlamofireImage
 
-
--------
+################
 
 
